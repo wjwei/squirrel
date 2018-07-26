@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.squirrelframework</groupId>
     <artifactId>squirrel-foundation</artifactId>
-    <version>0.3.8</version>
+    <version>0.3.10</version>
     <packaging>bundle</packaging>
     <name>squirrel foundation</name>
     <description>foundation module of squirrel framework which provided event driven infrastructure and a finite state machine implementation.</description>
@@ -181,18 +181,6 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>1.4</version>
-                        <configuration>
-                            <passphrase>${gpg.passphrase}</passphrase>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
                     </plugin>
                 </plugins>
             </build>
